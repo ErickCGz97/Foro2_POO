@@ -28,8 +28,8 @@ public class Laptop extends Equipo{
     }
 
     public String mostrarInformacionLaptop() {
-        return super.mostrarInformacionEquipo() + "\nMemoria: " + memoria + "\nTamaño de pantalla: " + pantalla + 
-               "\nCapacidad de disco duro: " + discoDuro;
+        return super.mostrarInformacionEquipo() + "\nMemoria (RAM): " + memoria + "\nTamaño de pantalla (Pulgadas): " + pantalla + 
+               "\nCapacidad de disco duro (GB): " + discoDuro;
     }  
     
 }

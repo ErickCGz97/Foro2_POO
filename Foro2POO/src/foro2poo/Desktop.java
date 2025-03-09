@@ -32,7 +32,7 @@ public class Desktop extends Equipo{
     
     public String mostarInformacionDesktop()
     {
-        return super.mostrarInformacionEquipo() + "\nMemoria: " + memoria + "\nTarjeta gráfica: " + tarjetaGrafica + "\nTamaño de torre: " + torre
-                + "\nCapacidad de disco duro: " + discoDuro;    
+        return super.mostrarInformacionEquipo() + "\nMemoria (RAM): " + memoria + "\nTarjeta gráfica: " + tarjetaGrafica + "\nTamaño de torre: " + torre
+                + "\nCapacidad de disco duro (GB): " + discoDuro;    
     }
 }

@@ -29,7 +29,7 @@ public class Tablet extends Equipo{
     }
     
     public String mostrarInformacionTablet() {
-        return super.mostrarInformacionEquipo() + "\nTamaño de pantalla: " + pantalla + "\nTipo de pantalla: " + pantallaCapacitivaResistiva + 
-               "\nTamaño de memoria NAND: " + memoriaNAND + "\nSistema Operativo: " + sistemaOperativo;
+        return super.mostrarInformacionEquipo() + "\nTamaño de pantalla (Pulgadas): " + pantalla + "\nTipo de pantalla: " + pantallaCapacitivaResistiva + 
+               "\nTamaño de memoria NAND (GB): " + memoriaNAND + "\nSistema Operativo: " + sistemaOperativo;
     }    
 }
