@@ -69,10 +69,10 @@ public class Foro2POO {
         String fabricante = JOptionPane.showInputDialog("Fabricante:");
         String modelo = JOptionPane.showInputDialog("Modelo:");
         String microprocesador = JOptionPane.showInputDialog("Microprocesador:");
-        String memoria = JOptionPane.showInputDialog("Memoria:");
+        String memoria = JOptionPane.showInputDialog("Memoria (RAM):");
         String tarjetaGrafica = JOptionPane.showInputDialog("Tarjeta gráfica:");
         String torre = JOptionPane.showInputDialog("Tamaño de torre: \n(SuperTorre, SemiTorre, MicroTorre)");
-        String discoDuro = JOptionPane.showInputDialog("Capacidad de disco duro:");
+        String discoDuro = JOptionPane.showInputDialog("Capacidad de disco duro (GB):");
 
         desktops.add(new Desktop(fabricante, modelo, microprocesador, memoria, tarjetaGrafica, torre, discoDuro));
         JOptionPane.showMessageDialog(null, "Equipo - Desktop registrada exitosamente.");
@@ -82,9 +82,9 @@ public class Foro2POO {
         String fabricante = JOptionPane.showInputDialog("Fabricante:");
         String modelo = JOptionPane.showInputDialog("Modelo:");
         String microprocesador = JOptionPane.showInputDialog("Microprocesador:");
-        String memoria = JOptionPane.showInputDialog("Memoria:");
-        String pantalla = JOptionPane.showInputDialog("Tamaño de la pantalla:");
-        String discoDuro = JOptionPane.showInputDialog("Capacidad del disco duro:");
+        String memoria = JOptionPane.showInputDialog("Memoria (RAM):");
+        String pantalla = JOptionPane.showInputDialog("Tamaño de la pantalla (Pulgadas):");
+        String discoDuro = JOptionPane.showInputDialog("Capacidad del disco duro (GB):");
 
         laptops.add(new Laptop(fabricante, modelo, microprocesador, memoria, pantalla, discoDuro));
         JOptionPane.showMessageDialog(null, "Equipo - Laptop registrada exitosamente.");
@@ -94,9 +94,12 @@ public class Foro2POO {
         String fabricante = JOptionPane.showInputDialog(("Fabricante: "));
         String modelo = JOptionPane.showInputDialog("Modelo: ");
         String microprocesador= JOptionPane.showInputDialog("Microprocesador: ");
-        String diagonalPantalla = JOptionPane.showInputDialog("Tamaño diagonal de la pantalla: ");
+        String diagonalPantalla = JOptionPane.showInputDialog("Tamaño diagonal de la pantalla (Pulgadas): ");
+        /*
+        Las pantallas táctiles resistivas o capacitiva se diferencian en base a la fabricacion y funcionamiento        
+        */
         String tipoPantalla = JOptionPane.showInputDialog("Capacitiva o Recursiva: ");
-        String memoriaNAND = JOptionPane.showInputDialog("Tamaño de memoria NAND: ");
+        String memoriaNAND = JOptionPane.showInputDialog("Tamaño de memoria NAND (GB): ");
         String sistemaOperativo = JOptionPane.showInputDialog("Sistema Operativo: ");
         
         tablets.add(new Tablet(fabricante, modelo, microprocesador, diagonalPantalla, tipoPantalla, memoriaNAND, sistemaOperativo));
